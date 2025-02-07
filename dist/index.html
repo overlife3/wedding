@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/index-u7MwC9An.css">
+  </head>
+  <body>
+    <main>
+      <section class="container m-auto pr-2.5 pl-2.5">
+        <div
+          class="lg:flex hidden xl:pt-[200px] lg:pt-[100px] justify-between gap-4 items-center"
+        >
+          <div
+            class="flex items-center justify-center relative pl-[100px] w-full h-[500px]"
+          >
+            <h1
+              class="absolute flex flex-col items-center xl:text-[110px] uppercase text-centern z-3 lg:text-[80px] font-['Source_Serif_4']"
+            >
+              Денис
+              <span
+                class="block leading-[0.6em] xl:text-[110px] text-[var(--secondary)] lg:text-[80px]"
+                >&</span
+              >
+              Кристина
+            </h1>
+          </div>
+          <div class="relative xl:w-[700px] h-[380px] lg:w-[600px] shrink-0">
+            <!-- <img
+              class="absolute bottom-0 left-0 xl:w-[340px] lg:w-[280px] h-[auto] border-[white] border-[3px]"
+              src="/images/envelope.jpg"
+            />
+            <img
+              class="absolute bottom-10 left-[50%] transform-[translateX(-50%)] xl:w-[340px] lg:w-[280px] h-[auto] border-[white] border-[3px] z-2"
+              src="/images/bouquet.jpg"
+            />
+            <img
+              class="absolute bottom-0 right-0 xl:w-[340px] lg:w-[280px] h-[auto] border-[white] border-[3px]"
+              src="/images/box.jpg"
+            /> -->
+            <img
+              class="absolute bottom-0 left-0 xl:w-[340px] lg:w-[280px] h-[auto] border-[white] border-[3px]"
+              src="/assets/IMG_1529-RfgyqwD2.webp"
+            />
+            <img
+              class="absolute bottom-10 left-[50%] transform-[translateX(-50%)] xl:w-[340px] lg:w-[280px] h-[auto] border-[white] border-[3px] z-2"
+              src="/assets/IMG_4409-CU29cj58.webp"
+            />
+            <img
+              class="absolute bottom-0 right-0 xl:w-[340px] lg:w-[280px] h-[auto] border-[white] border-[3px]"
+              src="/assets/IMG_3429-CG3yvEet.webp"
+            />
+          </div>
+        </div>
+        <div
+          class="flex lg:hidden items-center flex-col gap-[10px] pt-10 font-['Source_Serif_4'] mb-8"
+        >
+          <p class="uppercase text-center text-[50px] w-full">Денис</p>
+          <div
+            class="relative h-[240px] sm:h-[300px] sm:w-[500px] w-[300px] shrink-0 mb-4"
+          >
+            <!-- <img
+              class="absolute bottom-0 left-0 w-[140px] sm:w-[200px] h-[auto] border-[white] border-[3px]"
+              src="/images/envelope.jpg"
+            />
+            <img
+              class="absolute bottom-10 left-[50%] transform-[translateX(-50%)] w-[150px] sm:w-[200px] h-[auto] border-[white] border-[3px] z-2"
+              src="/images/bouquet.jpg"
+            />
+            <img
+              class="absolute bottom-0 right-0 w-[140px] sm:w-[200px] h-[auto] border-[white] border-[3px]"
+              src="/images/box.jpg"
+            /> -->
+            <img
+              class="absolute bottom-0 left-0 w-[140px] sm:w-[200px] h-[auto] border-[white] border-[3px]"
+              src="/assets/envelope-nYw9urYz.jpg"
+            />
+            <img
+              class="absolute bottom-10 left-[50%] transform-[translateX(-50%)] w-[150px] sm:w-[200px] h-[auto] border-[white] border-[3px] z-2"
+              src="/assets/bouquet-BJ5mzBnS.jpg"
+            />
+            <img
+              class="absolute bottom-0 right-0 w-[140px] sm:w-[200px] h-[auto] border-[white] border-[3px]"
+              src="/assets/box-SPnMxIh3.jpg"
+            />
+          </div>
+          <p class="uppercase text-center text-[50px] w-full">Кристина</p>
+        </div>
+        <div class="text-center text-[16px] md:text-[18px]">
+          <p class="mb-4">Дорогие родные и друзья!</p>
+          <p class="mb-8">
+            В нашей жизни скоро состоится <br />
+            важное событие - наша свадьба!
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center text-[16px] mb-4 lg:mb-20"
+        >
+          <p class="mb-4 md:text-[18px]">Включите музыку <br />для атмосферы</p>
+          <div
+            id="audio-button"
+            class="border-[var(--primary)] border-[2px] w-[70px] pt-2 pb-2 pr-4 pl-4 cursor-pointer group hover:border-(--secondary)"
+          >
+            <svg
+              id="audio-icon"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 200 200"
+              class="fill-(--primary) group-hover:!fill-(--secondary)"
+            >
+              <path
+                class="cls-1"
+                d="M100,175.69a5,5,0,0,1-3.37-1.31L48.06,130H29.31a5,5,0,0,1-5-5V75a5,5,0,0,1,5-5H48.06L96.63,25.62A5,5,0,0,1,105,29.31V170.69a5,5,0,0,1-5,5ZM34.31,120H50a5,5,0,0,1,3.37,1.31l41.63,38V40.65l-41.63,38A5,5,0,0,1,50,80H34.31Z"
+              />
+              <path
+                class="cls-1"
+                d="M119.4,122.53a5,5,0,0,1-3.54-8.53,19.82,19.82,0,0,0,0-28,5,5,0,0,1,7.07-7.07,29.83,29.83,0,0,1,0,42.14A5,5,0,0,1,119.4,122.53Z"
+              />
+              <path
+                class="cls-1"
+                d="M137.08,140.21a5,5,0,0,1-3.54-8.54,44.78,44.78,0,0,0,0-63.34,5,5,0,1,1,7.07-7.07,54.78,54.78,0,0,1,0,77.48A5,5,0,0,1,137.08,140.21Z"
+              />
+              <path
+                class="cls-1"
+                d="M152,155.13a5,5,0,0,1-3.54-8.53,65.91,65.91,0,0,0,0-93.2,5,5,0,1,1,7.07-7.07,75.9,75.9,0,0,1,0,107.34A5,5,0,0,1,152,155.13Z"
+              />
+            </svg>
+          </div>
+          <audio id="audio">
+            <source src="/assets/wedding-DWdoFrJB.mp3" type="audio/mpeg" />
+            Ваш браузер не поддерживает аудио.
+          </audio>
+        </div>
+      </section>
+      <section class="container m-auto pr-2.5 pl-2.5 lg:mb-35 mb-10">
+        <div
+          class="flex gap-3 justify-center sm:gap-15 md:gap-20 lg:justify-between"
+        >
+          <div
+            class="relative w-full grow-1 max-w-[300px] lg:max-w-[500px] xl:max-w-[600px]"
+          >
+            <img
+              src="/assets/handles-vgMAwFFE.jpg"
+              class="absolute top-0 right-0 w-[300px] max-w-[none] lg:w-[500px] h-auto lg:h-[600px] object-cover xl:w-[600px]"
+              alt="пары держатся за руки"
+            />
+          </div>
+          <div
+            class="flex flex-col items-start gap-[40px] w-[180px] shrink-0 grow-0 lg:w-[400px]"
+          >
+            <h2
+              class="uppercase text-[40px] font-['Source_Serif_4'] text-right mt-[40px] lg:text-[80px]"
+            >
+              wedding day
+            </h2>
+            <p class="text-[16px] lg:text-[20px] md:text-[18px]">
+              Мы приглашаем вас разделить с нами радостный день, в который мы
+              станем семьей!
+            </p>
+
+            <p class="text-[40px] font-['Source_Serif_4'] mb-4">17.05.2025</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container mx-auto lg:mb-[100px] flex justify-center items-center gap-10 pr-2.5 pl-2.5 lg:pt-[100px]"
+      >
+        <svg
+          width="302"
+          height="42"
+          viewBox="0 0 302 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke-width="2"
+          class="w-full mb-[100px] hidden lg:block"
+        >
+          <path
+            d="M288 41.4175C322.167 10.9175 312.6 -31.7825 1.00006 41.4175"
+            stroke="var(--primary)"
+          />
+        </svg>
+        <div
+          class="flex flex-col items-center gap-6 border-2 border-(--primary) px-5 py-4 max-w-[430px] w-full mb-8 shrink-0"
+        >
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 82.094 82.094"
+            xml:space="preserve"
+            class="fill-(--primary) stroke-[1px] w-[70px]"
+          >
+            <g id="_x37_7_Essential_Icons_24_">
+              <path
+                id="Heart"
+                d="M39.661,76.447l-32.9-32.6c-1.4-1.3-2.5-2.8-3.5-4.4c-5.4-8.9-4-20.3,3.5-27.7c4.3-4.3,10.1-6.7,16.2-6.7
+		c9.6,0,15.6,5.6,18.1,8.8c2.5-3.2,8.5-8.8,18.1-8.8c6.1,0,11.9,2.4,16.2,6.7c7.4,7.4,8.9,18.8,3.5,27.7c-1,1.6-2.1,3.1-3.5,4.4
+		l-32.9,32.6C41.661,77.247,40.461,77.247,39.661,76.447z M22.961,9.047c-5.1,0-9.8,2-13.4,5.5c-6.1,6.1-7.3,15.5-2.9,22.8
+		c0.8,1.3,1.8,2.6,2.9,3.7l31.5,31.2l31.5-31.2c1.1-1.1,2.1-2.3,2.9-3.7c4.4-7.4,3.3-16.8-2.9-22.8c-3.6-3.5-8.4-5.5-13.4-5.5
+		c-7.2,0-13.2,3.9-16.4,9.3c-0.8,1.3-2.7,1.3-3.5,0C36.161,12.947,30.161,9.047,22.961,9.047z"
+              />
+            </g>
+          </svg>
+          <p class="md:text-[18px] lg:text-[20px]">Ждем вас через...</p>
+          <div class="flex justify-between w-full max-w-[286px] gap-2">
+            <div
+              id="timer-day"
+              class="relative flex items-center justify-center w-[58px] h-[58px]"
+            >
+              <svg class="absolute top-0 left-0" width="58" height="58">
+                <circle
+                  data-timer="progress-circle"
+                  cx="29"
+                  cy="29"
+                  r="28"
+                  stroke="var(--primary)"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-dasharray="125.664"
+                  stroke-dashoffset="0"
+                />
+              </svg>
+              <div class="flex flex-col items-center justify-center">
+                <span
+                  data-timer="value"
+                  class="font-bold text-[22px] leading-[0.8em]"
+                >
+                </span>
+                <span data-timer="measurement" class="text-[10px]"></span>
+              </div>
+            </div>
+            <div
+              id="timer-hour"
+              class="relative flex items-center justify-center w-[58px] h-[58px]"
+            >
+              <svg class="absolute top-0 left-0" width="58" height="58">
+                <circle
+                  data-timer="progress-circle"
+                  cx="29"
+                  cy="29"
+                  r="28"
+                  stroke="var(--primary)"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-dasharray="125.664"
+                  stroke-dashoffset="0"
+                />
+              </svg>
+              <div class="flex flex-col items-center justify-center">
+                <span
+                  data-timer="value"
+                  class="font-bold text-[22px] leading-[0.8em]"
+                >
+                </span>
+                <span data-timer="measurement" class="text-[10px]"></span>
+              </div>
+            </div>
+            <div
+              id="timer-minute"
+              class="relative flex items-center justify-center w-[58px] h-[58px]"
+            >
+              <svg class="absolute top-0 left-0" width="58" height="58">
+                <circle
+                  data-timer="progress-circle"
+                  cx="29"
+                  cy="29"
+                  r="28"
+                  stroke="var(--primary)"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-dasharray="125.664"
+                  stroke-dashoffset="0"
+                />
+              </svg>
+              <div class="flex flex-col items-center justify-center">
+                <span
+                  data-timer="value"
+                  class="font-bold text-[22px] leading-[0.8em]"
+                >
+                </span>
+                <span data-timer="measurement" class="text-[10px]"></span>
+              </div>
+            </div>
+            <div
+              id="timer-second"
+              class="relative flex items-center justify-center w-[58px] h-[58px]"
+            >
+              <svg class="absolute top-0 left-0" width="58" height="58">
+                <circle
+                  data-timer="progress-circle"
+                  cx="29"
+                  cy="29"
+                  r="28"
+                  stroke="var(--primary)"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-dasharray="125.664"
+                  stroke-dashoffset="0"
+                />
+              </svg>
+              <div class="flex flex-col items-center justify-center">
+                <span
+                  data-timer="value"
+                  class="font-bold text-[22px] leading-[0.8em]"
+                >
+                </span>
+                <span data-timer="measurement" class="text-[10px]"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg
+          class="w-full mb-[100px] hidden lg:block"
+          width="302"
+          height="42"
+          viewBox="0 0 302 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke-width="2"
+        >
+          <path
+            d="M14.4929 41.4175C-19.6738 10.9175 -10.1071 -31.7825 301.493 41.4175"
+            stroke="var(--primary)"
+          />
+        </svg>
+      </section>
+      <section
+        class="container m-auto pr-2.5 pl-2.5 lg:mb-20 mb-10 overflow-hidden"
+      >
+        <div
+          class="flex gap-3 justify-center sm:gap-15 md:gap-20 lg:justify-between mb-[80px] lg:mb-[200px]"
+        >
+          <div
+            class="flex flex-col items-start gap-[40px] w-[180px] shrink-0 grow-0 lg:w-[400px]"
+          >
+            <h2
+              class="uppercase text-[40px] font-['Source_Serif_4'] text-right mt-[20px] lg:text-[80px]"
+            >
+              локация
+            </h2>
+            <p class="text-[16px] md:text-[18px] lg:text-[20px]">
+              <span class="font-bold">Отель "Manor-House"</span>
+              <br />
+              г. Чебоксары, ул. Михаила Сеспеля, 17
+              <br />
+              <br />
+              Для гостей, проживающих за пределами Чебоксар, мы организовали
+              трансфер из г. Канаш
+            </p>
+            <div class="hidden justify-center lg:flex w-full">
+              <div
+                class="flex items-center gap-2 border-[2px] border-(--primary) py-3 px-4 group cursor-pointer hover:border-(--secondary)"
+                data-open-modal-id="open-modal-map"
+              >
+                <span class="group-hover:text-(--secondary)"> Карта </span>
+
+                <svg
+                  id="Layer_1"
+                  style="enable-background: new 0 0 64 64"
+                  version="1.1"
+                  viewBox="0 0 64 64"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="w-[50px] h-[30px] fill-(--primary) stroke-(--primary) group-hover:fill-(--secondary) group-hover:stroke-(--secondary)"
+                >
+                  <path
+                    d="M34.1,53.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7l16.3-16.3H11.2c-0.6,0-1-0.4-1-1s0.4-1,1-1h39.3  L34.1,17.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0l18,18c0.1,0.1,0.2,0.2,0.2,0.3c0.1,0.2,0.1,0.5,0,0.8  c-0.1,0.1-0.1,0.2-0.2,0.3l-18,18C35.2,53.9,34.5,53.9,34.1,53.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative w-full grow-1 max-w-[300px] lg:max-w-[500px] xl:max-w-[600px]"
+          >
+            <img
+              src="/assets/handles-vgMAwFFE.jpg"
+              class="absolute top-0 left-0 w-[300px] max-w-[none] lg:w-[500px] h-auto lg:h-[600px] object-cover xl:w-[600px]"
+              alt="пары держатся за руки"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center lg:hidden">
+          <div
+            class="flex items-center gap-2 border-[2px] border-(--primary) py-3 px-4 group cursor-pointer hover:border-(--secondary)"
+            data-open-modal-id="open-modal-map"
+          >
+            <span class="group-hover:text-(--secondary)"> Карта </span>
+
+            <svg
+              id="Layer_1"
+              style="enable-background: new 0 0 64 64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="w-[50px] h-[30px] fill-(--primary) stroke-(--primary) group-hover:fill-(--secondary) group-hover:stroke-(--secondary)"
+            >
+              <path
+                d="M34.1,53.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7l16.3-16.3H11.2c-0.6,0-1-0.4-1-1s0.4-1,1-1h39.3  L34.1,17.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0l18,18c0.1,0.1,0.2,0.2,0.2,0.3c0.1,0.2,0.1,0.5,0,0.8  c-0.1,0.1-0.1,0.2-0.2,0.3l-18,18C35.2,53.9,34.5,53.9,34.1,53.5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section>
+        <img
+          src="/assets/bouquet-2-Cz3ynPiN.jpg"
+          alt="букет"
+          class="w-full h-[200px] object-cover sm:h-[300px] lg:h-[400px]"
+        />
+        <div class="container m-auto pr-2.5 pl-2.5">
+          <h2
+            class="text-[40px] font-['Source_Serif_4'] text-center mt-[40px] lg:text-[80px] mb-[30px]"
+          >
+            План дня
+          </h2>
+          <div>
+            <div
+              class="flex items-start justify-start gap-3 sm:gap-7 mb-[30px]"
+            >
+              <p
+                class="text-[30px] font-['Source_Serif_4'] lg:text-[50px] leading-[1em] md:text-[40px]"
+              >
+                15:30
+              </p>
+              <div
+                class="w-[35px] mt-[15px] md:mt-[20px] lg:mt-[25px] h-[2px] bg-(--primary) shrink-0"
+              ></div>
+              <div>
+                <p
+                  class="font-bold font-['Source_Serif_4'] lg:text-[20px] md:text-[18px]"
+                >
+                  Сбор гостей, велком фуршет
+                </p>
+                <p class="lg:text-[20px] md:text-[18px]">
+                  Собираясь на мероприятие, просим взять с собой ваши улыбки и
+                  хорошее настроение
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start justify-start gap-3 sm:gap-7 mb-[30px]"
+            >
+              <p
+                class="text-[30px] font-['Source_Serif_4'] lg:text-[50px] leading-[1em] md:text-[40px]"
+              >
+                16:00
+              </p>
+              <div
+                class="w-[35px] mt-[15px] md:mt-[20px] lg:mt-[25px] h-[2px] bg-(--primary) shrink-0"
+              ></div>
+              <div>
+                <p
+                  class="font-bold font-['Source_Serif_4'] lg:text-[20px] md:text-[18px]"
+                >
+                  Выездная церемония
+                </p>
+                <p class="lg:text-[20px] md:text-[18px]">
+                  Приготовьте платочки для трогательного момента
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start justify-start gap-3 sm:gap-7 mb-[30px]"
+            >
+              <p
+                class="text-[30px] font-['Source_Serif_4'] lg:text-[50px] leading-[1em] md:text-[40px]"
+              >
+                17:00
+              </p>
+              <div
+                class="w-[35px] mt-[15px] md:mt-[20px] lg:mt-[25px] h-[2px] bg-(--primary) shrink-0"
+              ></div>
+              <div>
+                <p
+                  class="font-bold font-['Source_Serif_4'] lg:text-[20px] md:text-[18px]"
+                >
+                  Начало свадебного ужина
+                </p>
+                <p class="lg:text-[20px] md:text-[18px]">
+                  Время вкусной еды, танцев и развлечений
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start justify-start gap-3 sm:gap-7 mb-[30px]"
+            >
+              <p
+                class="text-[30px] font-['Source_Serif_4'] lg:text-[50px] leading-[1em] md:text-[40px]"
+              >
+                22:00
+              </p>
+              <div
+                class="w-[35px] mt-[15px] md:mt-[20px] lg:mt-[25px] h-[2px] bg-(--primary) shrink-0"
+              ></div>
+              <div>
+                <p
+                  class="font-bold font-['Source_Serif_4'] lg:text-[20px] md:text-[18px]"
+                >
+                  Окончание, трансфер гостей
+                </p>
+                <p class="lg:text-[20px] md:text-[18px]">
+                  К сожалению, даже такой волшебный вечер может подойти к концу
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container m-auto pr-2.5 pl-2.5 lg:mb-[100px]">
+        <div class="flex flex-col gap-[20px]">
+          <h2
+            class="text-[40px] font-['Source_Serif_4'] text-center mt-[40px] lg:text-[80px] mb-[10px]"
+          >
+            Важно
+          </h2>
+          <p class="lg:text-[20px] md:text-[18px]">
+            Мы очень старались сделать праздник красивым и будем рады, если в
+            своих нарядах вы поддержите цветовую гамму нашей свадьбы.
+          </p>
+          <p class="lg:text-[20px] md:text-[18px]">
+            Не бойтесь советоваться по поводу образов с невестой, она будет рада
+            помочь вам в этом!
+          </p>
+
+          <img
+            src="/assets/dress-DooVUOh7.jpg"
+            alt="dress"
+            class="w-full max-w-[500px] m-auto md:hidden"
+          />
+          <div class="flex justify-center w-full">
+            <div class="w-[70px] h-[2px] bg-(--primary) shrink-0"></div>
+          </div>
+          <p class="lg:text-[20px] md:text-[18px]">
+            Знаем, что на свадьбах принято дарить цветы, но мы просим вас их не
+            дарить. Мы не успеем насладиться этой красотой! Но, по желанию,
+            выразить вашу любовь и радость можно в виде бутылки вина или
+            шампанского, которое, мы откроем на ближайшем совместном празднике.
+          </p>
+          <div class="flex justify-center w-full">
+            <div class="w-[70px] h-[2px] bg-(--primary) shrink-0"></div>
+          </div>
+          <p class="lg:text-[20px] md:text-[18px]">
+            Если вы хотите подарить нам ценный и нужный подарок, мы будем очень
+            благодарны за вклад в бюджет нашей молодой семьи.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="bg-[rgba(188,169,154,.15)] mt-[40px] mb-[70px]">
+          <img
+            src="/assets/table-C7u5OQ9m.webp"
+            alt="букет"
+            class="sm:w-[500px] md:w-[600px] lg:w-[800px] m-auto"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-[20px] sm:gap-[40px] sm:flex-row justify-center items-center mb-[50px]"
+        >
+          <p class="lg:text-[20px] md:text-[18px] text-center font-bold">
+            Просим вас ответить<br />на несколько вопросов ниже
+          </p>
+          <svg
+            class="fill-(--primary) w-[100px] mb-30px"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title />
+            <g data-name="Layer 35" id="Layer_35">
+              <path
+                d="M405.96973,63.08008H279.21V18.46973A12.47955,12.47955,0,0,0,262.80859,6.63281L91.54614,63.32373v.02441a4.98286,4.98286,0,0,0-3.4563,4.73193V488.05957A17.9605,17.9605,0,0,0,106.03027,506h22.37988a5,5,0,1,0,0-10H106.03027a7.95,7.95,0,0,1-7.94043-7.94043V73.08008H405.96973a7.94915,7.94915,0,0,1,7.94043,7.93945v407.04A7.95,7.95,0,0,1,405.96973,496H158.41016a5,5,0,0,0,0,10H405.96973a17.9605,17.9605,0,0,0,17.94043-17.94043v-407.04A17.96029,17.96029,0,0,0,405.96973,63.08008Zm-136.75977,0H124.10474L265.94922,16.127A2.47888,2.47888,0,0,1,269.21,18.46973Z"
+              />
+              <path
+                d="M164.96973,133.06152c12.03516-9.71094,30.252-13.918,47.542-10.97559,18.00977,3.0625,33.38379,13.5498,43.28809,29.5293a5.00041,5.00041,0,0,0,8.5-.001c10.73047-17.32031,27.56152-28.00293,47.3916-30.082a4.99993,4.99993,0,0,0-1.043-9.94531,71.8559,71.8559,0,0,0-50.60352,28.56738,72.303,72.303,0,0,0-45.85645-27.92676c-20.03223-3.40918-41.29883,1.59375-55.49707,13.05078-26.53027,21.39844-26.99121,63.7959-1.15137,105.52148,20.7002,35.71094,76.91992,68.59668,100.1416,81.084a4.99785,4.99785,0,0,0,4.73633,0c23.22461-12.49219,79.4502-45.3877,100.1416-81.084,25.8291-41.72461,25.36816-84.123-1.14648-105.51758a61.1019,61.1019,0,0,0-18.61328-10.11914,4.99969,4.99969,0,0,0-3.25977,9.45313,51.14992,51.14992,0,0,1,15.58984,8.44531c22.42188,18.0918,21.97559,55.2793-1.11035,92.53516-.02637.043-.05273.08691-.07812.13086-18.72754,32.37891-70.16211,63.12109-93.8916,76.06641-23.72656-12.94043-75.15625-43.67383-93.8916-76.06641-.02539-.04492-.05176-.08789-.07812-.13184C142.98535,188.34082,142.53906,151.1543,164.96973,133.06152Z"
+              />
+              <path
+                d="M315.20605,375.63184H205.90039a39.89648,39.89648,0,0,0,0,79.793H315.20605a39.89648,39.89648,0,1,0,0-79.793Zm0,69.793H205.90039a29.89648,29.89648,0,0,1,0-59.793H315.20605a29.89648,29.89648,0,1,1,0,59.793Z"
+              />
+            </g>
+          </svg>
+        </div>
+        <form
+          class="container m-auto pr-2.5 pl-2.5 sm:text-[18px] lg:text-[20px] lg:mb-[100px]"
+        >
+          <div
+            class="flex flex-col gap-4 max-w-[400px] lg:max-w-[700px] m-auto"
+          >
+            <label for="name"> Ваше имя и фамилия </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Имя Фамилия"
+              class="outline-0 border-0 border-b-2 border-(--primary) bg-[transparent] px-2 py-1 mb-[20px]"
+            />
+
+            <div>
+              <p class="mb-2">Сможете ли присутствовать на нашем торжестве?</p>
+              <div class="flex flex-col lg:flex-row lg:gap-5">
+                <div class="flex gap-2 custom-radio">
+                  <label for="present-1">
+                    <input
+                      type="radio"
+                      id="present-1"
+                      name="present"
+                      value="Я буду/мы будем"
+                      checked
+                    />
+                    <span class="radio-btn"></span>
+                    Я буду/мы будем</label
+                  >
+                </div>
+                <div class="flex gap-2 custom-radio">
+                  <label for="present-2">
+                    <input
+                      type="radio"
+                      id="present-2"
+                      name="present"
+                      value="Отвечу позже"
+                    />
+                    <span class="radio-btn"></span>
+                    Отвечу позже</label
+                  >
+                </div>
+                <div class="flex gap-2 custom-radio">
+                  <label for="present-3">
+                    <input
+                      type="radio"
+                      id="present-3"
+                      name="present"
+                      value="Прийти не получится"
+                    />
+                    <span class="radio-btn"></span>
+
+                    Прийти не получится</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <p>Что предпочитаете из напитков?</p>
+              <p class="text-[14px] mb-2">
+                (возможно ответить несколько вариантов)
+              </p>
+              <div class="lg:flex lg:flex-row flex-wrap">
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="vodka" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="vodka"
+                      name="vodka"
+                      value="Водка"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Водка
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="autor-vodka" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="autor-vodka"
+                      name="autor-vodka"
+                      value="Авторские настойки"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Авторские настойки
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="koniak" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="koniak"
+                      name="koniak"
+                      value="Коньяк"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Коньяк
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="viski" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="viski"
+                      name="viski"
+                      value="Виски"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Виски
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="shampanskoe" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="shampanskoe"
+                      name="shampanskoe"
+                      value="Шампанское"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Шампанское
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="white-wine" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="white-wine"
+                      name="white-wine"
+                      value="Белое вино"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Белое вино
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="red-wine" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="red-wine"
+                      name="red-wine"
+                      value="Красное вино"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Красное вино
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="dont-drink" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="dont-drink"
+                      name="dont-drink"
+                      value="Не пью алкогольные напитки"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Не пью алкогольные напитки
+                  </label>
+                </div>
+                <div class="custom-checkbox lg:w-[50%]">
+                  <label for="another" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="another"
+                      name="another"
+                      value="Другое"
+                      class="cursor-pointer"
+                    />
+                    <span class="checkmark"></span>
+                    Другое
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="bg-[transparent] border-2 border-(--primary) py-4 w-full max-w-[300px] cursor-pointer hover:bg-(--primary) hover:text-(--secondary)"
+              >
+                Отправить
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="container m-auto pr-2.5 pl-2.5 mb-[80px]">
+        <h2
+          class="text-[40px] font-['Source_Serif_4'] text-center mt-[40px] lg:text-[80px] mb-[60px]"
+        >
+          КОНТАКТЫ
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-5">
+          <img
+            src="/assets/tent-CrHcw6fb.jpg"
+            alt="шатер"
+            class="w-full max-w-[340px] m-auto mb-[20px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[500px] xl:h-[500px] xl:object-cover"
+          />
+          <div
+            class="pt-5 sm:flex sm:flex-col sm:justify-between sm:items-center sm:w-[50%]"
+          >
+            <div>
+              <p
+                class="mb-[20px] text-center sm:text-[18px] lg:text-[20px] xl:mb-[80px]"
+              >
+                По всем вопросам по программе<br />вы можете обратиться к нам
+              </p>
+              <div class="xl:flex xl:flex-row gap-5">
+                <div
+                  class="flex flex-col items-center gap-2 mb-[30px] sm:text-[18px] lg:text-[20px]"
+                >
+                  <p class="font-bold">Невеста</p>
+                  <p>Кристина: +7 (977) 866-80-27</p>
+                  <a href="#" class="mt-[10px]"
+                    ><svg
+                      class="w-[40px]"
+                      height="100%"
+                      version="1.1"
+                      viewBox="0 0 64 64"
+                      width="100%"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:cc="http://creativecommons.org/ns#"
+                      xmlns:dc="http://purl.org/dc/elements/1.1/"
+                      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                    >
+                      <defs />
+                      <path
+                        d="M 9.7799554,45.499241 6.0519439,56.684276 c -0.1190004,0.359001 -0.026,0.755002 0.2420007,1.023003 0.2680008,0.268001 0.6640021,0.361001 1.0230032,0.242001 L 18.501982,54.220268 c 3.935013,2.398008 8.557027,3.780012 13.499042,3.780012 14.350045,0 26.000081,-11.650036 26.000081,-26.000081 0,-14.350044 -11.650036,-26.0000804 -26.000081,-26.0000804 -14.350044,0 -26.0000803,11.6500364 -26.0000803,26.0000804 0,4.942016 1.3820043,9.56403 3.7790117,13.499042 z m 2.0460066,0.187001 c 0.095,-0.285001 0.057,-0.598002 -0.104001,-0.852003 -2.3560069,-3.712012 -3.7210111,-8.115025 -3.7210111,-12.83404 0,-13.246041 10.7540331,-24.0000742 24.0000741,-24.0000742 13.246041,0 24.000075,10.7540332 24.000075,24.0000742 0,13.246041 -10.754034,24.000075 -24.000075,24.000075 -4.719014,0 -9.122028,-1.365005 -12.834039,-3.721012 -0.254001,-0.161 -0.567002,-0.199001 -0.852003,-0.104 l -9.7330303,3.24401 c 0,0 3.2440103,-9.73303 3.2440103,-9.73303 z"
+                        style="stroke-width: 1; fill: var(--primary)"
+                      />
+                      <path
+                        d="m 38.376921,34.996919 c -0.375028,-0.161481 -0.811128,-0.07715 -1.100336,0.212059 l -3.535547,3.535547 c -0.239003,0.239003 -0.645107,0.216152 -1.13945,0.110719 -1.225569,-0.262485 -2.811167,-1.232899 -4.517495,-2.939226 -1.706327,-1.706328 -2.67674,-3.291926 -2.939226,-4.517495 -0.105433,-0.494343 -0.128284,-0.900447 0.110719,-1.13945 0,0 3.535547,-3.535547 3.535547,-3.535547 0.289208,-0.289208 0.37354,-0.725308 0.212059,-1.100336 0,0 -0.92754,-2.164981 -1.915444,-4.469523 -0.653889,-1.525048 -2.021177,-2.626463 -3.649946,-2.940009 -1.629402,-0.314178 -3.308191,0.200486 -4.481286,1.373581 -0.988539,0.988539 -1.762116,1.762116 -1.762116,1.762116 -1.699891,1.699891 -2.352294,4.235138 -1.971424,7.16443 0.525714,4.048534 3.043764,8.89863 7.204242,13.059108 4.160478,4.160478 9.010574,6.678528 13.059108,7.204242 2.929292,0.38087 5.464539,-0.271533 7.16443,-1.971424 0,0 0.773577,-0.773577 1.762116,-1.762116 1.173095,-1.173095 1.687759,-2.851883 1.373581,-4.481286 -0.313546,-1.628769 -1.414961,-2.996057 -2.940009,-3.649946 -2.304542,-0.987904 -4.469523,-1.915444 -4.469523,-1.915444 z m -0.165018,2.104803 3.84656,1.648865 c 0.915185,0.391923 1.576146,1.212691 1.764273,2.189952 0.188128,0.977262 -0.120954,1.984818 -0.824528,2.688392 0,0 -1.762116,1.762117 -1.762116,1.762117 -1.296839,1.296838 -3.257578,1.693602 -5.492675,1.403056 -3.698477,-0.479716 -8.100862,-2.834312 -11.90198,-6.63543 -3.801118,-3.801118 -6.155714,-8.203503 -6.63543,-11.90198 -0.290546,-2.235097 0.106218,-4.195836 1.403056,-5.492675 0,0 1.762117,-1.762116 1.762117,-1.762116 0.703574,-0.703574 1.71113,-1.012656 2.688392,-0.824528 0.977261,0.188127 1.798029,0.849088 2.189953,1.764273 0,0 1.648864,3.84656 1.648864,3.84656 0,0 -3.056834,3.056834 -3.056834,3.056834 -0.636399,0.636398 -0.933608,1.658655 -0.652626,2.972017 0.31764,1.482956 1.416523,3.448756 3.480945,5.513178 2.064422,2.064422 4.030222,3.163305 5.513178,3.480945 1.313362,0.280982 2.335619,-0.01623 2.972017,-0.652626 z"
+                        style="stroke-width: 0.945908; fill: var(--primary)"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="flex flex-col items-center gap-2 sm:text-[18px] lg:text-[20px]"
+                >
+                  <p class="font-bold">Жених</p>
+                  <p>Денис: +7 (925) 377-82-06</p>
+                  <a href="#" class="mt-[10px]"
+                    ><svg
+                      class="w-[40px]"
+                      height="100%"
+                      version="1.1"
+                      viewBox="0 0 64 64"
+                      width="100%"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:cc="http://creativecommons.org/ns#"
+                      xmlns:dc="http://purl.org/dc/elements/1.1/"
+                      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                    >
+                      <defs />
+                      <path
+                        d="M 9.7799554,45.499241 6.0519439,56.684276 c -0.1190004,0.359001 -0.026,0.755002 0.2420007,1.023003 0.2680008,0.268001 0.6640021,0.361001 1.0230032,0.242001 L 18.501982,54.220268 c 3.935013,2.398008 8.557027,3.780012 13.499042,3.780012 14.350045,0 26.000081,-11.650036 26.000081,-26.000081 0,-14.350044 -11.650036,-26.0000804 -26.000081,-26.0000804 -14.350044,0 -26.0000803,11.6500364 -26.0000803,26.0000804 0,4.942016 1.3820043,9.56403 3.7790117,13.499042 z m 2.0460066,0.187001 c 0.095,-0.285001 0.057,-0.598002 -0.104001,-0.852003 -2.3560069,-3.712012 -3.7210111,-8.115025 -3.7210111,-12.83404 0,-13.246041 10.7540331,-24.0000742 24.0000741,-24.0000742 13.246041,0 24.000075,10.7540332 24.000075,24.0000742 0,13.246041 -10.754034,24.000075 -24.000075,24.000075 -4.719014,0 -9.122028,-1.365005 -12.834039,-3.721012 -0.254001,-0.161 -0.567002,-0.199001 -0.852003,-0.104 l -9.7330303,3.24401 c 0,0 3.2440103,-9.73303 3.2440103,-9.73303 z"
+                        style="stroke-width: 1; fill: var(--primary)"
+                      />
+                      <path
+                        d="m 38.376921,34.996919 c -0.375028,-0.161481 -0.811128,-0.07715 -1.100336,0.212059 l -3.535547,3.535547 c -0.239003,0.239003 -0.645107,0.216152 -1.13945,0.110719 -1.225569,-0.262485 -2.811167,-1.232899 -4.517495,-2.939226 -1.706327,-1.706328 -2.67674,-3.291926 -2.939226,-4.517495 -0.105433,-0.494343 -0.128284,-0.900447 0.110719,-1.13945 0,0 3.535547,-3.535547 3.535547,-3.535547 0.289208,-0.289208 0.37354,-0.725308 0.212059,-1.100336 0,0 -0.92754,-2.164981 -1.915444,-4.469523 -0.653889,-1.525048 -2.021177,-2.626463 -3.649946,-2.940009 -1.629402,-0.314178 -3.308191,0.200486 -4.481286,1.373581 -0.988539,0.988539 -1.762116,1.762116 -1.762116,1.762116 -1.699891,1.699891 -2.352294,4.235138 -1.971424,7.16443 0.525714,4.048534 3.043764,8.89863 7.204242,13.059108 4.160478,4.160478 9.010574,6.678528 13.059108,7.204242 2.929292,0.38087 5.464539,-0.271533 7.16443,-1.971424 0,0 0.773577,-0.773577 1.762116,-1.762116 1.173095,-1.173095 1.687759,-2.851883 1.373581,-4.481286 -0.313546,-1.628769 -1.414961,-2.996057 -2.940009,-3.649946 -2.304542,-0.987904 -4.469523,-1.915444 -4.469523,-1.915444 z m -0.165018,2.104803 3.84656,1.648865 c 0.915185,0.391923 1.576146,1.212691 1.764273,2.189952 0.188128,0.977262 -0.120954,1.984818 -0.824528,2.688392 0,0 -1.762116,1.762117 -1.762116,1.762117 -1.296839,1.296838 -3.257578,1.693602 -5.492675,1.403056 -3.698477,-0.479716 -8.100862,-2.834312 -11.90198,-6.63543 -3.801118,-3.801118 -6.155714,-8.203503 -6.63543,-11.90198 -0.290546,-2.235097 0.106218,-4.195836 1.403056,-5.492675 0,0 1.762117,-1.762116 1.762117,-1.762116 0.703574,-0.703574 1.71113,-1.012656 2.688392,-0.824528 0.977261,0.188127 1.798029,0.849088 2.189953,1.764273 0,0 1.648864,3.84656 1.648864,3.84656 0,0 -3.056834,3.056834 -3.056834,3.056834 -0.636399,0.636398 -0.933608,1.658655 -0.652626,2.972017 0.31764,1.482956 1.416523,3.448756 3.480945,5.513178 2.064422,2.064422 4.030222,3.163305 5.513178,3.480945 1.313362,0.280982 2.335619,-0.01623 2.972017,-0.652626 z"
+                        style="stroke-width: 0.945908; fill: var(--primary)"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- tort -->
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class="hidden md:block w-[100px] m-auto fill-(--primary)"
+            >
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M501.961,424.797h-35.137V313.532c0-16.147-13.137-29.284-29.284-29.284h-25.931V172.983     c0-16.147-13.137-29.284-29.284-29.284H288.48c3.779-2.882,7.721-6.028,11.678-9.396c27.322-23.26,41.176-44.972,41.176-64.531     c0-26.371-21.454-47.825-47.825-47.825c-15.089,0-28.702,7.035-37.509,18.152c-8.806-11.115-22.42-18.152-37.508-18.152     c-26.371,0-47.825,21.454-47.825,47.825c0,19.56,13.854,41.271,41.177,64.532c3.956,3.368,7.899,6.512,11.678,9.396h-93.845     c-16.147,0-29.284,13.136-29.284,29.284v111.265H74.461c-16.147,0-29.284,13.136-29.284,29.284v111.265H10.039     C4.496,424.798,0,429.292,0,434.837v45.176c0,5.545,4.496,10.039,10.039,10.039h491.922c5.544,0,10.039-4.495,10.039-10.039     v-45.176C512,429.291,507.504,424.797,501.961,424.797z M190.745,69.772c0-15.299,12.447-27.746,27.746-27.746     c14.046,0,25.885,10.502,27.54,24.429c0.6,5.051,4.883,8.855,9.97,8.855c5.087,0,9.37-3.804,9.97-8.855     c1.654-13.927,13.493-24.429,27.54-24.429c15.298,0,27.744,12.447,27.744,27.746c0,23.22-38.079,55.158-65.235,72.206     C234.728,128.448,190.745,95.273,190.745,69.772z M120.471,172.983c0-5.076,4.129-9.206,9.206-9.206h252.647     c5.077,0,9.206,4.13,9.206,9.206V204c-0.23-0.252-0.468-0.513-0.712-0.783c-5.1-5.629-12.084-13.338-25.631-13.338     c-13.552,0-20.539,7.71-25.64,13.339c-4.345,4.794-6.287,6.739-10.752,6.739s-6.406-1.946-10.751-6.739     c-5.101-5.629-12.088-13.339-25.641-13.339c-13.544,0-20.528,7.707-25.628,13.334c-4.347,4.798-6.291,6.744-10.764,6.744     c-4.465,0-6.406-1.946-10.751-6.739c-5.101-5.629-12.088-13.339-25.641-13.339c-13.544,0-20.528,7.707-25.628,13.334     c-4.347,4.798-6.291,6.744-10.764,6.744c-4.472,0-6.416-1.947-10.763-6.743c-5.1-5.627-12.084-13.335-25.629-13.335     c-13.55,0-20.537,7.708-25.639,13.336c-0.249,0.274-0.489,0.54-0.724,0.795V172.983z M136.071,216.701     c4.347-4.796,6.291-6.742,10.763-6.742c4.465,0,6.407,1.946,10.752,6.739c5.101,5.629,12.088,13.339,25.64,13.339     c13.553,0,20.54-7.71,25.641-13.339c4.345-4.794,6.286-6.739,10.751-6.739c4.473,0,6.417,1.947,10.764,6.744     c5.1,5.627,12.084,13.334,25.628,13.334c13.553,0,20.54-7.71,25.641-13.339c4.345-4.794,6.286-6.739,10.751-6.739     c4.473,0,6.417,1.947,10.764,6.744c5.1,5.627,12.084,13.334,25.628,13.334c13.545,0,20.529-7.707,25.629-13.335     c4.347-4.797,6.291-6.743,10.763-6.743c4.466,0,6.407,1.946,10.751,6.74c3.654,4.033,8.291,9.12,15.601,11.688l-0.009,0.016     v55.845H120.471v-55.844l-0.025-0.01C127.768,225.829,132.412,220.737,136.071,216.701z M74.461,304.326h363.078     c5.077,0,9.206,4.13,9.206,9.206v22.839c-8.023,2.44-13.123,7.538-17.136,11.551c-4.925,4.924-7.342,7.102-12.991,7.102     c-5.643,0-8.056-2.176-12.98-7.099c-5.477-5.477-12.98-12.98-27.177-12.98s-21.7,7.502-27.177,12.98     c-4.922,4.922-7.337,7.099-12.98,7.099s-8.056-2.176-12.98-7.099c-5.477-5.477-12.98-12.98-27.177-12.98     s-21.7,7.502-27.177,12.98c-4.922,4.922-7.337,7.099-12.98,7.099s-8.056-2.176-12.98-7.099     c-5.477-5.477-12.98-12.98-27.177-12.98c-14.201,0-21.701,7.503-27.178,12.983c-4.919,4.92-7.333,7.096-12.969,7.096     c-5.643,0-8.056-2.176-12.98-7.099c-5.477-5.477-12.98-12.98-27.177-12.98s-21.7,7.502-27.177,12.98     c-4.922,4.922-7.337,7.099-12.98,7.099s-8.056-2.176-12.98-7.099c-4.014-4.014-9.115-9.114-17.138-11.553v-22.84h-0.001     C65.255,308.456,69.384,304.326,74.461,304.326z M65.255,359.277l2.94,2.847c5.477,5.477,12.98,12.98,27.177,12.98     s21.7-7.502,27.177-12.98c4.922-4.922,7.337-7.099,12.98-7.099s8.056,2.177,12.98,7.099c5.477,5.477,12.98,12.98,27.177,12.98     c14.192,0,21.692-7.501,27.168-12.979c4.921-4.923,7.337-7.1,12.98-7.1s8.056,2.177,12.98,7.099     c5.477,5.477,12.98,12.98,27.177,12.98s21.7-7.502,27.177-12.98c4.922-4.922,7.337-7.099,12.98-7.099s8.056,2.177,12.98,7.099     c5.477,5.477,12.98,12.98,27.177,12.98s21.7-7.502,27.177-12.98c4.922-4.922,7.337-7.099,12.98-7.099     c5.643,0,8.057,2.177,12.98,7.099c5.477,5.477,12.98,12.98,27.177,12.98c14.202,0,21.707-7.502,27.187-12.981     c1.082-1.082,2.039-2.024,2.94-2.846v65.521H65.255V359.277z M491.922,469.973H20.078v-25.098h471.843V469.973z"
+                    />
+                    <path
+                      d="M340.661,269.36c2.65,0,5.23-1.074,7.097-2.941c1.867-1.867,2.943-4.457,2.943-7.098c0-2.65-1.074-5.23-2.943-7.098     c-1.866-1.877-4.447-2.941-7.097-2.941c-2.64,0-5.23,1.064-7.098,2.941c-1.867,1.867-2.941,4.457-2.941,7.098     s1.073,5.22,2.941,7.098C335.43,268.286,338.02,269.36,340.661,269.36z"
+                    />
+                    <path
+                      d="M284.219,269.36c5.543,0,10.039-4.498,10.039-10.039c0-5.552-4.497-10.039-10.039-10.039     c-5.542,0-10.039,4.487-10.039,10.039C274.18,264.862,278.679,269.36,284.219,269.36z"
+                    />
+                    <path
+                      d="M227.78,269.36c5.543,0,10.039-4.498,10.039-10.039c0-5.552-4.497-10.039-10.039-10.039     c-5.542,0-10.039,4.487-10.039,10.039C217.741,264.862,222.238,269.36,227.78,269.36z"
+                    />
+                    <path
+                      d="M171.339,269.36c2.64,0,5.23-1.074,7.098-2.941c1.866-1.867,2.942-4.457,2.942-7.098c0-2.65-1.074-5.23-2.942-7.098     c-1.867-1.877-4.457-2.941-7.098-2.941c-2.65,0-5.23,1.064-7.098,2.941c-1.877,1.867-2.941,4.447-2.941,7.098     c0,2.64,1.064,5.23,2.941,7.098C166.109,268.286,168.689,269.36,171.339,269.36z"
+                    />
+                    <path
+                      d="M405.082,388.826c-2.64,0-5.23,1.074-7.098,2.941c-1.867,1.867-2.941,4.447-2.941,7.098c0,2.64,1.073,5.22,2.941,7.098     c1.867,1.867,4.457,2.941,7.098,2.941s5.23-1.074,7.097-2.941c1.867-1.867,2.943-4.457,2.943-7.098     c0-2.65-1.074-5.23-2.943-7.098C410.313,389.901,407.723,388.826,405.082,388.826z"
+                    />
+                    <path
+                      d="M226.184,388.826c-5.542,0-10.039,4.488-10.039,10.039c0,5.542,4.498,10.039,10.039,10.039     c5.542,0,10.039-4.498,10.039-10.039C236.223,393.314,231.725,388.826,226.184,388.826z"
+                    />
+                    <path
+                      d="M166.55,388.826c-5.542,0-10.039,4.488-10.039,10.039c0,5.542,4.499,10.039,10.039,10.039     c5.543,0,10.039-4.498,10.039-10.039C176.589,393.314,172.092,388.826,166.55,388.826z"
+                    />
+                    <path
+                      d="M345.449,388.826c-5.542,0-10.039,4.488-10.039,10.039c0,5.542,4.498,10.039,10.039,10.039     c5.543,0,10.039-4.498,10.039-10.039C355.489,393.314,350.992,388.826,345.449,388.826z"
+                    />
+                    <path
+                      d="M285.817,388.826c-5.543,0-10.039,4.488-10.039,10.039c0,5.542,4.498,10.039,10.039,10.039     c5.542,0,10.039-4.498,10.039-10.039C295.856,393.314,291.358,388.826,285.817,388.826z"
+                    />
+                    <path
+                      d="M106.918,388.826c-2.64,0-5.23,1.064-7.098,2.931c-1.867,1.877-2.942,4.457-2.942,7.108c0,2.64,1.073,5.23,2.942,7.098     c1.867,1.867,4.457,2.941,7.098,2.941s5.23-1.074,7.097-2.941c1.867-1.867,2.942-4.457,2.942-7.098     c0-2.65-1.074-5.23-2.942-7.108C112.148,389.891,109.558,388.826,106.918,388.826z"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[rgba(188,169,154,.15)]">
+        <div class="container m-auto pr-2.5 pl-2.5 py-2">
+          <h2
+            class="text-[30px] font-['Source_Serif_4'] text-center mt-[30px] lg:text-[50px]"
+          >
+            До скорой встречи!
+          </h2>
+          <div
+            class="flex gap-2 justify-start m-auto max-w-[400px] lg:max-w-[600px]"
+          >
+            <h2
+              class="text-[30px] font-['Source_Serif_4'] text-center lg:text-[50px]"
+            >
+              С любовью
+            </h2>
+            <svg
+              enable-background="new 0 0 91 91"
+              version="1.1"
+              viewBox="0 0 91 91"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="w-[50px] fill-(--secondary) lg:w-[70px]"
+            >
+              <g>
+                <path
+                  d="M69.709,36.026c-3.387-2.799-8.43-2.578-11.603,0.457c-0.782-1.311-1.799-2.504-3.071-3.555   c-1.887-1.561-4.307-2.418-6.813-2.418c-2.896,0-5.699,1.154-7.689,3.164c-0.275,0.277-0.537,0.57-0.786,0.885   c-2.453-3.057-6.417-4.592-10.317-3.887c-3.341,0.607-5.964,2.441-7.797,5.449c-2.582,4.236-2.789,8.328-0.618,12.16   c1.138,2.012,2.621,3.98,4.534,6.018c3.475,3.689,7.588,7.195,12.949,11.035c0.389,0.275,0.807,0.418,1.246,0.418   c0.684,0,1.135-0.342,1.342-0.496c3.742-2.67,6.857-5.18,9.613-7.746c1.199,0.945,3.332,2.596,5.703,4.293   c0.172,0.121,0.611,0.387,1.187,0.387c0.375,0,0.808-0.111,1.263-0.449c3.718-2.652,6.771-5.211,9.336-7.824   c1.465-1.494,3.128-3.334,4.355-5.643c0.545-1.025,1.165-2.406,1.127-4.023C73.59,40.896,72.256,38.126,69.709,36.026z    M50.611,52.858c-3.01,3.068-6.448,5.977-10.872,9.18c-4.817-3.498-8.554-6.711-11.713-10.068c-1.724-1.836-3.05-3.59-4.053-5.361   c-1.562-2.756-1.383-5.525,0.562-8.717c1.325-2.174,3.125-3.439,5.502-3.873c0.449-0.082,0.902-0.123,1.352-0.123   c2.77,0,5.223,1.533,6.563,4.104l0.293,0.553c0.3,0.564,0.924,0.949,1.528,0.904c0.639-0.01,1.218-0.379,1.499-0.951   c0.493-1.006,1.025-1.781,1.678-2.438c1.356-1.369,3.278-2.156,5.273-2.156c1.718,0,3.367,0.582,4.646,1.639   c2.406,1.988,3.613,4.502,3.691,7.684c0.025,1.166-0.49,2.301-1,3.26C54.213,49.032,52.303,51.134,50.611,52.858z M69.542,46.677   c-1.025,1.928-2.487,3.539-3.781,4.859c-2.245,2.287-4.904,4.543-8.177,6.928c-1.771-1.287-3.363-2.516-4.429-3.348   c1.835-1.877,3.89-4.166,5.409-7.029c0.672-1.268,1.439-2.973,1.395-4.932c-0.027-1.119-0.176-2.182-0.428-3.195   c0.003-0.004,0.006-0.006,0.008-0.01c0.084-0.172,0.134-0.277,0.309-0.459c0.13-0.113,0.287-0.254,0.498-0.467   c1.901-1.918,5.128-2.09,7.198-0.377c1.778,1.465,2.671,3.326,2.728,5.686C70.286,44.985,70.068,45.688,69.542,46.677z"
+                />
+              </g>
+            </svg>
+          </div>
+          <h2
+            class="text-[30px] font-['Source_Serif_4'] text-right lg:text-[50px] mt-[-10px] sm:mt-[-20px] max-w-[600px] m-auto lg:max-w-[700px]"
+          >
+            Денис и Кристина!
+          </h2>
+        </div>
+      </section>
+    </main>
+    <!-- <div
+      class="fixed z-[-1] top-0 left-0 w-full h-full bg-[url('/images/bg-main.jpg')] bg-cover bg-center"
+    ></div>
+    <div
+      class="absolute z-[-1] top-0 lg:left-[30%] left-0 w-[300px] lg:w-[700px]"
+    >
+      <img src="/images/banner-bg.png" alt="" />
+    </div> -->
+    <div
+      class="hidden justify-center items-center fixed top-0 left-0 right-0 bottom-0 bg-[#00000021]"
+      data-modal-id="modal-map"
+    >
+      <div class="relative p-[20px] bg-[#f7f4ef]" data-modal="window">
+        <p class="text-center mb-4 text-[24px]">Мы вас ждем!</p>
+        <div class="sm:hidden">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af254826beb5d4a0c45a70bd1fbedc10d7df7fe77a6ba6b29fbb7931450d54a66&amp;width=250&amp;height=280&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+        <div class="hidden sm:block">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af254826beb5d4a0c45a70bd1fbedc10d7df7fe77a6ba6b29fbb7931450d54a66&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+        <div
+          data-modal="cross"
+          class="absolute w-[30px] h-[30px] flex justify-center items-center cursor-pointer top-[15px] right-[15px] text-[20px] font-bold border-2 border-(--primary) hover:border-(--secondary) hover:text-(--secondary)"
+        >
+          X
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/timer.js"></script>
+    <script src="/js/helper.js"></script>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>
