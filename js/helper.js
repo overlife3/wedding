@@ -1,4 +1,4 @@
-function pluralize(number, forms) {
+export function pluralize(number, forms) {
   const cases = [2, 0, 1, 1, 1, 2]; // Правила для выбора формы
   let index;
 

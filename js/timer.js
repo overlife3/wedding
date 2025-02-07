@@ -1,3 +1,5 @@
+import { pluralize } from "./helper";
+
 function setCircleProperties(elemId, timeFull, timeLeft) {
   const elem = document.getElementById(elemId);
   const circle = elem.querySelector('[data-timer="progress-circle"]');
