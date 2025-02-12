@@ -10,13 +10,15 @@ function openModal(modal) {
 }
 
 function setModalEvents(handleId, modalId) {
-  const handle = document.querySelector(
+  const handles = document.querySelectorAll(
     '[data-open-modal-id="open-modal-map"]'
   );
   const modal = document.querySelector('[data-modal-id="modal-map"]');
   const cross = modal.querySelector('[data-modal="cross"]');
 
-  handle.addEventListener("click", () => openModal(modal));
+  for (let handle of handles) {
+    handle.addEventListener("click", () => openModal(modal));
+  }
   cross.addEventListener("click", () => closeModal(modal));
 
   modal.addEventListener("click", (e) => {
