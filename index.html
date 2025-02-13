@@ -83,36 +83,21 @@
           class="flex justify-center item gap-5 items-center text-center text-[16px] lg:mb-20 font-['Old_Standard_TT'] text-white"
         >
           <p>Включите музыку для атмосферы</p>
-          <div class="w-[80px]">
-            <div
-              id="audio-button"
-              class="mx-auto bg-white w-[39px] py-[1px] pb-[1px] pr-4 pl-[1px] cursor-pointer group hover:bg-[transparent]"
+          <div
+            class="flex items-center justify-center w-[30px] h-[30px] bg-white rounded-[50%] border-2 border-[white]"
+            id="audio-button"
+          >
+            <svg
+              id="audio-icon"
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-(--primary) w-[30px] h-[30px] shrink-0 mr-[-2px]"
             >
-              <svg
-                id="audio-icon"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 200"
-                class="fill-(--primary) group-hover:!fill-[white] w-[35px] h-[33px]"
-              >
-                <path
-                  class="cls-1"
-                  d="M100,175.69a5,5,0,0,1-3.37-1.31L48.06,130H29.31a5,5,0,0,1-5-5V75a5,5,0,0,1,5-5H48.06L96.63,25.62A5,5,0,0,1,105,29.31V170.69a5,5,0,0,1-5,5ZM34.31,120H50a5,5,0,0,1,3.37,1.31l41.63,38V40.65l-41.63,38A5,5,0,0,1,50,80H34.31Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M119.4,122.53a5,5,0,0,1-3.54-8.53,19.82,19.82,0,0,0,0-28,5,5,0,0,1,7.07-7.07,29.83,29.83,0,0,1,0,42.14A5,5,0,0,1,119.4,122.53Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M137.08,140.21a5,5,0,0,1-3.54-8.54,44.78,44.78,0,0,0,0-63.34,5,5,0,1,1,7.07-7.07,54.78,54.78,0,0,1,0,77.48A5,5,0,0,1,137.08,140.21Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M152,155.13a5,5,0,0,1-3.54-8.53,65.91,65.91,0,0,0,0-93.2,5,5,0,1,1,7.07-7.07,75.9,75.9,0,0,1,0,107.34A5,5,0,0,1,152,155.13Z"
-                />
-              </svg>
-            </div>
+              <path d="M15 12.3301L9 16.6603L9 8L15 12.3301Z" />
+            </svg>
           </div>
           <audio id="audio">
             <source src="/music/wedding.mp3" type="audio/mpeg" />
@@ -437,10 +422,10 @@
       </section>
       <section class="container mb-[20px]">
         <div
-          class="flex gap-3 justify-center sm:gap-15 md:gap-20 lg:justify-between h-[72vw] mb-[30px]"
+          class="flex gap-3 justify-center items-center sm:gap-15 md:gap-20 lg:justify-between h-[72vw] mb-[30px]"
         >
           <div
-            class="relative w-full grow-1 max-w-[300px] lg:max-w-[500px] xl:max-w-[600px]"
+            class="relative w-full grow-1 max-w-[300px] h-[100%] lg:max-w-[500px] xl:max-w-[600px]"
           >
             <img
               src="/images/IMG_3429.webp"
@@ -449,14 +434,14 @@
             />
             <img
               src="/images/bg.webp"
-              class="absolute top-[-30px] right-0 w-[380px] max-w-[none] lg:w-[500px] h-full lg:h-[600px] object-cover xl:w-[600px] z-[-1]"
+              class="absolute top-[-20px] right-0 w-[380px] h-full max-w-[none] lg:w-[500px] lg:h-[600px] object-cover xl:w-[600px] z-[-1]"
             />
           </div>
           <div
-            class="flex flex-col items-start gap-[40px] w-[250px] shrink-0 grow-0 lg:w-[400px] pr-2.5"
+            class="flex flex-col items-start gap-[40px] w-[200px] shrink-0 grow-0 lg:w-[400px] pr-2.5"
           >
             <h2
-              class="w-full uppercase text-[28px] font-['Kaisei_Decol'] font-bold text-center mt-[40px] lg:text-[80px]"
+              class="w-full uppercase text-[26px] font-['Kaisei_Decol'] font-bold text-center lg:text-[80px]"
             >
               DRESS CODE
             </h2>
@@ -558,7 +543,7 @@
           >
             <div>
               <p
-                class="mb-[20px] text-center sm:text-[18px] text-[14px] lg:text-[20px] xl:mb-[80px]"
+                class="mb-[20px] text-center sm:text-[18px] text-[16px] lg:text-[20px] xl:mb-[80px] font-bold"
               >
                 По всем вопросам по программе<br />вы можете обратиться к нам
               </p>
@@ -580,7 +565,8 @@
               </div>
               <p class="text-center mb-[16px] inline-block px-[20px]">
                 В день свадьбы мы будем очень волноваться, поэтому все вопросы
-                доверили нашему свадебному организатору:
+                доверили нашему
+                <span class="font-bold">свадебному организатору</span>:
               </p>
               <p class="text-center">
                 <span class="font-bold">Екатерина: </span>+7 (937)-015-13-33
@@ -677,7 +663,7 @@
             type="text/javascript"
             charset="utf-8"
             async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af254826beb5d4a0c45a70bd1fbedc10d7df7fe77a6ba6b29fbb7931450d54a66&amp;width=250&amp;height=280&amp;lang=ru_RU&amp;scroll=true"
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad45aba7ce87d58e411657b687809ed8940a1c31779bfe3e0d95695b51ea864eb&amp;width=350&amp;height=280&amp;lang=ru_RU&amp;scroll=true"
           ></script>
         </div>
         <div class="hidden sm:block">
@@ -685,7 +671,7 @@
             type="text/javascript"
             charset="utf-8"
             async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af254826beb5d4a0c45a70bd1fbedc10d7df7fe77a6ba6b29fbb7931450d54a66&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad45aba7ce87d58e411657b687809ed8940a1c31779bfe3e0d95695b51ea864eb&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
           ></script>
         </div>
         <div

@@ -7,11 +7,11 @@ const audioIcon = document.getElementById("audio-icon");
 playButton.addEventListener("click", () => {
   if (audio.paused) {
     audio.play(); // Воспроизводим аудио
-    playButton.style.backgroundColor = "var(--primary)";
-    audioIcon.style.fill = "var(--secondary)";
+    playButton.style.backgroundColor = "transparent";
+    audioIcon.style.fill = "white";
   } else {
     audio.pause(); // Останавливаем аудио
-    playButton.style.backgroundColor = "transparent";
+    playButton.style.backgroundColor = "white";
     audioIcon.style.fill = "var(--primary)";
   }
 });
