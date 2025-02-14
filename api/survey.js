@@ -19,7 +19,7 @@ export default async function handler(request, response) {
     try {
       // Вставляем данные в таблицу survey_results
       const data = await sql`SELECT * FROM survey`;
-      response.status(200).json(data);
+      response.status(200).json(data.rows);
     } catch (error) {
       console.error("Ошибка:", error);
       response.status(500).json({ error: error });
