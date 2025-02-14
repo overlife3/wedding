@@ -3,7 +3,7 @@ const surveyForm = document.querySelector('[data-form="survey"]');
 surveyForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const loader = surveyForm.querySelector('[data-form="survey"]');
+  const loader = surveyForm.querySelector('[data-form="loader"]');
   const successIcon = surveyForm.querySelector('[data-form="success-icon"]');
   const errorMessage = surveyForm.querySelector('[data-form="error-message"]');
 

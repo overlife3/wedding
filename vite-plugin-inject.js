@@ -4,7 +4,7 @@ export default function injectScriptPlugin() {
     transformIndexHtml(html) {
       return html.replace(
         "</body>",
-        `<script src="/assets/injected.js"></script></body>`
+        `<script src="/assets/injected.js" type="module"></script></body>`
       );
     },
   };
