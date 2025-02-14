@@ -17,11 +17,12 @@ surveyForm.addEventListener("submit", async (e) => {
     isPresent: radioGroupValue,
   };
 
-  const response = await fetch("/api/survey", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  });
+  //   const response = await fetch("/api/survey", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(data),
+  //   });
+  const response = await fetch("/api/init_bd");
 
   const result = await response.json();
   alert(result.message);

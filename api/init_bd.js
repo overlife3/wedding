@@ -8,7 +8,7 @@ export default async function handler(request, response) {
             CREATE TABLE survey (
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(255) NOT NULL,
-                ispresent BOOLEAN NOT NULL DEFAULT FALSE
+                ispresent VARCHAR(255) NOT NULL
             );
           `;
       response.status(200).json({ message: "Таблица создана!" });
