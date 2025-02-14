@@ -2,18 +2,19 @@ import { sql } from "@vercel/postgres";
 
 export default async function handler(request, response) {
   if (request.method === "POST") {
-    const { name, isPresent } = request.body;
-
     try {
       // Вставляем данные в таблицу survey_results
       await sql`
-            INSERT INTO survey (name, ispresent)
-            VALUES (${name}, ${isPresent})
+            CREATE TABLE survey (
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(255) NOT NULL,
+                ispresent VARCHAR(255) NOT NULL
+            );
           `;
-      response.status(200).json({ message: "Данные сохранены!" });
+      response.status(200).json({ message: "Таблица создана!" });
     } catch (error) {
       console.error("Ошибка:", error);
-      response.status(500).json({ error: error });
+      response.status(500).json({ error: "Ошибка сервера" });
     }
   } else {
     response.status(405).json({ message: "Метод не поддерживается" });

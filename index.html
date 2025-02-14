@@ -641,11 +641,29 @@
 
             <div class="flex justify-center">
               <button
-                class="bg-[transparent] border-2 border-(--primary) py-2 w-full max-w-[120px] cursor-pointer hover:bg-(--primary) hover:text-[white]"
+                class="relative bg-[transparent] border-2 border-(--primary) py-2 w-full max-w-[120px] cursor-pointer hover:bg-(--primary) hover:text-[white]"
               >
                 Отправить
+                <div
+                  data-form="loader"
+                  class="hidden absolute top-[50%] right-[-50px] transform-[translateY(-50%)] w-[30px] h-[30px] pointer-events-none user-select-none"
+                >
+                  <span class="loader"></span>
+                </div>
+                <div
+                  data-form="success-icon"
+                  class="hidden absolute justify-center items-center top-[50%] right-[-40px] transform-[translateY(-50%)] w-[30px] h-[30px] pointer-events-none user-select-none"
+                >
+                  <div class="check_icon"></div>
+                </div>
               </button>
             </div>
+            <p
+              data-form="error-message"
+              class="hidden text-[14px] md:text-[15px] lg:text-[16px] text-center"
+            >
+              Произошла ошибка, поробуйте позднее
+            </p>
           </div>
         </form>
       </section>

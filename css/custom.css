@@ -96,3 +96,35 @@
 .custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
   opacity: 1;
 }
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.check_icon {
+  display: block;
+  width: 12px;
+  height: 24px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-50%);
+  margin-bottom: -7px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
