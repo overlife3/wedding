@@ -13,7 +13,7 @@ export default async function handler(request, response) {
       response.status(200).json({ message: "Данные сохранены!" });
     } catch (error) {
       console.error("Ошибка:", error);
-      response.status(500).json({ error: "Ошибка сервера" });
+      response.status(500).json({ error: error });
     }
   } else {
     response.status(405).json({ message: "Метод не поддерживается" });
