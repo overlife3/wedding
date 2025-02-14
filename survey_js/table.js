@@ -39,8 +39,5 @@ async function setData(data) {
     ++count;
   }
 
-  const safeHTML = DOMPurify.sanitize(rows, {
-    ALLOWED_TAGS: ["tr", "td", "th", "table", "tbody", "thead", "tfoot"], // Разрешаем теги таблицы
-  });
-  tbody.innerHTML = safeHTML;
+  tbody.innerHTML = rows;
 }
