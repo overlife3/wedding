@@ -28,13 +28,14 @@ async function setData(data) {
   let rows = "";
   let count = 1;
   for (let obj of data) {
-    rows += `<tr>
-            <td class="border-r-2 border-[#cdcdcd] px-2 text-center pb-2">${count}</td>
-            <td class="border-r-2 border-[#cdcdcd] px-2 text-center">
-              ${obj.name}
-            </td>
-            <td class="px-2 text-center">${obj.ispresent}</td>
-          </tr>`;
+    rows +=
+      '<tr><td class="border-r-2 border-[#cdcdcd] px-2 text-center pb-2">' +
+      count +
+      '</td><td class="border-r-2 border-[#cdcdcd] px-2 text-center">' +
+      obj.name +
+      '</td><td class="px-2 text-center">' +
+      obj.ispresent +
+      "</td></tr>";
     ++count;
   }
 
