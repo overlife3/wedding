@@ -1,3 +1,5 @@
+import DOMPurify from "dompurify";
+
 const table = document.getElementById("table");
 const loader = document.getElementById("loader");
 const errorMessage = document.getElementById("error-message");
