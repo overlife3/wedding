@@ -28,9 +28,9 @@
       href="/assets/favicon-16x16-Byop7bSF.png"
     />
     <link rel="manifest" href="/assets/site-D6S4zFVZ.webmanifest" />
-    <script type="module" crossorigin src="/assets/injected.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/injected2.js">
-    <link rel="stylesheet" crossorigin href="/assets/main-Bdv0ER0A.css">
+    <script type="module" crossorigin src="/assets/main.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/main_js_injected.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-CZmmcwR2.css">
   </head>
   <body>
     <main>
@@ -57,7 +57,7 @@
                 <span
                   class="md:absolute md:top-[160px] left-[120px] xl:left-[200px]"
                 >
-                  Kristin<span class="md:text-(--primary)">a</span>
+                  Kristina
                 </span>
               </div>
             </div>
@@ -643,11 +643,29 @@
 
             <div class="flex justify-center">
               <button
-                class="bg-[transparent] border-2 border-(--primary) py-2 w-full max-w-[120px] cursor-pointer hover:bg-(--primary) hover:text-[white]"
+                class="relative bg-[transparent] border-2 border-(--primary) py-2 w-full max-w-[120px] cursor-pointer hover:bg-(--primary) hover:text-[white]"
               >
                 Отправить
+                <div
+                  data-form="loader"
+                  class="hidden absolute top-[50%] right-[-50px] transform-[translateY(-50%)] w-[30px] h-[30px] pointer-events-none user-select-none"
+                >
+                  <span class="loader"></span>
+                </div>
+                <div
+                  data-form="success-icon"
+                  class="hidden absolute justify-center items-center top-[50%] right-[-40px] transform-[translateY(-50%)] w-[30px] h-[30px] pointer-events-none user-select-none"
+                >
+                  <div class="check_icon"></div>
+                </div>
               </button>
             </div>
+            <p
+              data-form="error-message"
+              class="hidden text-[14px] md:text-[15px] lg:text-[16px] text-center"
+            >
+              Произошла ошибка, поробуйте позднее
+            </p>
           </div>
         </form>
       </section>
@@ -774,5 +792,5 @@
       </div>
     </div>
     <!-- Должно удаляться при сборке-->
-  <script src="/assets/injected.js"></script></body>
+  <script src="/assets/main_js_injected.js" type="module"></script></body>
 </html>

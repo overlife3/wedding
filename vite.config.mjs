@@ -7,10 +7,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: "index.html", // Основная точка входа
-        injected: "js/index.js", // Файл, в который объединятся все скрипты
+        main_js_injected: "js/index.js", // Файл, в который объединятся все скрипты
+        survey: "survey.html",
+        survey_js_injected: "survey_js/index.js",
       },
       output: {
-        entryFileNames: "assets/injected.js", // Отключает хеш и фиксирует имя
+        entryFileNames: "assets/[name].js", // Отключает хеш и фиксирует имя
       },
     },
   },
