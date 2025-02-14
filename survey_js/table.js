@@ -1,6 +1,5 @@
 const table = document.getElementById("table");
 const loader = document.getElementById("loader");
-const successIcon = document.getElementById("success-icon");
 const errorMessage = document.getElementById("error-message");
 
 getData();
@@ -13,6 +12,7 @@ async function getData() {
   const response = await fetch("/api/survey");
   const result = await response.json();
 
+  loader.style.display = "none";
   if (response.ok) {
     table.style.display = "table";
     await setData(result);
@@ -20,7 +20,6 @@ async function getData() {
     errorMessage.style.display = "block";
     console.error(result.message);
   }
-  loader.style.display = "none";
 }
 
 async function setData(data) {

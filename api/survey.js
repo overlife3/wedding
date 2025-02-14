@@ -18,8 +18,8 @@ export default async function handler(request, response) {
   } else if (request.method === "GET") {
     try {
       // Вставляем данные в таблицу survey_results
-      await sql`SELECT * FROM survey`;
-      response.status(200).json({ message: "Данные получены!" });
+      const data = await sql`SELECT * FROM survey`;
+      response.status(200).json(data);
     } catch (error) {
       console.error("Ошибка:", error);
       response.status(500).json({ error: error });
