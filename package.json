@@ -1,8 +1,11 @@
 {
-	"dependencies": {
-		"@tailwindcss/postcss": "^4.0.0",
-		"postcss": "^8.5.1",
-		"tailwindcss": "^4.0.0",
-		"vite": "^6.1.0"
-	}
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.1.0",
+    "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-static-copy": "^2.2.0"
+  }
 }

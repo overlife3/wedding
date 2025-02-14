@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import injectScriptPlugin from "./vite-plugin-inject";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
   build: {
@@ -13,5 +14,15 @@ export default defineConfig({
       },
     },
   },
-  plugins: [injectScriptPlugin()],
+  plugins: [
+    viteStaticCopy({
+      targets: [
+        {
+          src: "api", // Исходная папка
+          dest: "", // Корневая директория в dist
+        },
+      ],
+    }),
+    injectScriptPlugin(),
+  ],
 });
