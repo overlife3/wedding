@@ -2,13 +2,13 @@ import { sql } from "@vercel/postgres";
 
 export default async function handler(request, response) {
   if (request.method === "POST") {
-    const { question1, question2 } = request.body;
+    const { name, isPresent } = request.body;
 
     try {
       // Вставляем данные в таблицу survey_results
       await sql`
-            INSERT INTO survey_results (question1, question2)
-            VALUES (${question1}, ${question2})
+            INSERT INTO survey (name, ispresent)
+            VALUES (${name}, ${isPresent})
           `;
       response.status(200).json({ message: "Данные сохранены!" });
     } catch (error) {
