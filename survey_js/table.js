@@ -13,7 +13,6 @@ async function getData() {
 
   const response = await fetch("/api/survey");
   const result = await response.json();
-  console.log(result);
   loader.style.display = "none";
   if (response.ok) {
     table.style.display = "table";
@@ -39,6 +38,8 @@ async function setData(data) {
     ++count;
   }
 
-  const safeHTML = DOMPurify.sanitize(rows);
+  const safeHTML = DOMPurify.sanitize(rows, {
+    ALLOWED_TAGS: ["tr", "td", "th", "table", "tbody", "thead", "tfoot"], // Разрешаем теги таблицы
+  });
   tbody.innerHTML = safeHTML;
 }
