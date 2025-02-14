@@ -14,6 +14,9 @@ importers:
       '@vercel/postgres':
         specifier: ^0.10.0
         version: 0.10.0
+      dompurify:
+        specifier: ^3.2.4
+        version: 3.2.4
       postcss:
         specifier: ^8.5.1
         version: 8.5.1
@@ -378,6 +381,9 @@ packages:
   '@types/pg@8.11.6':
     resolution: {integrity: sha512-/2WmmBXHLsfRqzfHW7BNZ8SbYzE8OSk7i3WjFYvfgRHj7S1xj+16Je5fUKv3lVdVzk/zn9TXOqf+avFCFIE0yQ==}
 
+  '@types/trusted-types@2.0.7':
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
+
   '@vercel/postgres@0.10.0':
     resolution: {integrity: sha512-fSD23DxGND40IzSkXjcFcxr53t3Tiym59Is0jSYIFpG4/0f0KO9SGtcp1sXiebvPaGe7N/tU05cH4yt2S6/IPg==}
     engines: {node: '>=18.14'}
@@ -406,6 +412,9 @@ packages:
     resolution: {integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==}
     engines: {node: '>=0.10'}
     hasBin: true
+
+  dompurify@3.2.4:
+    resolution: {integrity: sha512-ysFSFEDVduQpyhzAob/kkuJjf5zWkZD8/A9ywSp1byueyuCfHamrCBa14/Oc2iiB0e51B+NpxSl5gmzn+Ms/mg==}
 
   enhanced-resolve@5.18.0:
     resolution: {integrity: sha512-0/r0MySGYG8YqlayBZ6MuCfECmHFdJ5qyPh8s8wa5Hnm6SaFLSK1VYCbj+NKp090Nm1caZhD+QTnmxO7esYGyQ==}
@@ -924,6 +933,9 @@ snapshots:
       pg-protocol: 1.7.1
       pg-types: 4.0.2
 
+  '@types/trusted-types@2.0.7':
+    optional: true
+
   '@vercel/postgres@0.10.0':
     dependencies:
       '@neondatabase/serverless': 0.9.5
@@ -960,6 +972,10 @@ snapshots:
       fsevents: 2.3.3
 
   detect-libc@1.0.3: {}
+
+  dompurify@3.2.4:
+    optionalDependencies:
+      '@types/trusted-types': 2.0.7
 
   enhanced-resolve@5.18.0:
     dependencies:

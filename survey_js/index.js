@@ -1,1 +1,1 @@
-import "./hi";
+import "./table";

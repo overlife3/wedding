@@ -26,9 +26,61 @@
       type="image/png"
       sizes="16x16"
       href="/assets/favicon-16x16-Byop7bSF.png"
-    />
+    />
+    <link rel="stylesheet" crossorigin href="/assets/global-JZZ92s1S.css">
   </head>
-  <body>
-    Результаты опроса
+  <body class="!font-['Open_Sans'] !text-[#242424]">
+    <main class="container mx-auto px-2.5 pt-[20px]">
+      <h1
+        class="text-[24px] sm:text-[32px] lg:text-[48px] font-bold mb-[20px] lg:mb-[40px]"
+      >
+        Результаты опроса
+      </h1>
+      <table
+        class="hidden w-full mb-[40px] md:text-[18px] max-w-[1024px]"
+        id="table"
+      >
+        <thead>
+          <tr>
+            <th class="border-r-2 border-[#cdcdcd] px-2 pb-2">Номер</th>
+            <th class="border-r-2 border-[#cdcdcd] px-2">Имя</th>
+            <th class="px-2">Присутствие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border-r-2 border-[#cdcdcd] px-2 text-center pb-2">1</td>
+            <td class="border-r-2 border-[#cdcdcd] px-2 text-center">
+              Семенов Константин Олегович
+            </td>
+            <td class="px-2 text-center">Прийти не получится</td>
+          </tr>
+          <tr>
+            <td class="border-r-2 border-[#cdcdcd] px-2 text-center pb-2">1</td>
+            <td class="border-r-2 border-[#cdcdcd] px-2 text-center">
+              Семенов Константин Олегович
+            </td>
+            <td class="px-2 text-center">Прийти не получится</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div
+        id="loader"
+        class="hidden w-[80px] h-[80px] pointer-events-none user-select-none"
+      >
+        <span class="loader"></span>
+      </div>
+      <p
+        id="error-message"
+        class="hidden md:text-[18px] lg:text-[20px] mb-[40px] text-(--primary) font-medium"
+      >
+        Произошла ошибка, поробуйте позднее
+      </p>
+      <p class="md:text-[18px]">
+        Для удаления ненужный строк опроса, обратитесь к разрабу
+        <span class="text-(--primary) text-[18px] md:text-[22px]">❤</span>
+      </p>
+    </main>
   <script type="module" src="/assets/survey_js_injected.js"></script></body>
 </html>

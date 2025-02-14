@@ -15,6 +15,15 @@ export default async function handler(request, response) {
       console.error("Ошибка:", error);
       response.status(500).json({ error: error });
     }
+  } else if (request.method === "GET") {
+    try {
+      // Вставляем данные в таблицу survey_results
+      await sql`SELECT * FROM survey`;
+      response.status(200).json({ message: "Данные получены!" });
+    } catch (error) {
+      console.error("Ошибка:", error);
+      response.status(500).json({ error: error });
+    }
   } else {
     response.status(405).json({ message: "Метод не поддерживается" });
   }
